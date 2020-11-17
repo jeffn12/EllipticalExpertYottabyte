@@ -1,0 +1,28 @@
+div {
+  margin: auto;
+  background: black;
+  width: 100px;
+  height: 100px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: relative;
+  top: 20px;
+}
+
+div::before, div::after {
+  content: "";
+  width: 30px;
+  height: 20px;
+  background: black;
+  position: absolute;
+  left: -20px;
+  top: 45px;
+  border-radius: 50px;
+}
+
+div::after {
+  left: 90px;
+}
+
